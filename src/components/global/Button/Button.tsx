@@ -1,0 +1,32 @@
+import React from "react";
+
+import { ButtonProps as Props } from "./Button.types";
+
+const Button: React.FC<Props> = (props) => {
+  const { type = "primary", title, customClasses } = props;
+
+  const getClasses = () => {
+    switch (type) {
+      case "primary":
+        return "bg-primary text-white";
+      case "white":
+        return "bg-white text-primary";
+      case "secondary":
+        return "bg-secondary text-white";
+      default:
+        return "bg-primary text-white";
+    }
+  };
+
+  return (
+    <div
+      className={`py-[1.6rem] px-[4rem] rounded-[1.2rem] text-[1.6rem] cursor-pointer hover:shadow-lg ${getClasses()} ${customClasses}`}
+    >
+      {title}
+    </div>
+  );
+};
+
+Button.defaultProps = {};
+
+export default Button;
