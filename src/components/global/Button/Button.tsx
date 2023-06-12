@@ -4,6 +4,7 @@ import { ButtonProps as Props } from "./Button.types";
 
 const Button: React.FC<Props> = (props) => {
   const { type = "primary", title, customClasses } = props;
+  const { onClick} = props;
 
   const getClasses = () => {
     switch (type) {
@@ -13,6 +14,8 @@ const Button: React.FC<Props> = (props) => {
         return "bg-white text-primary";
       case "secondary":
         return "bg-secondary text-white";
+      case "outline":
+        return "bg-white text-primary border-[0.1rem] border-solid border-primary";
       default:
         return "bg-primary text-white";
     }
@@ -20,7 +23,7 @@ const Button: React.FC<Props> = (props) => {
 
   return (
     <div
-      className={`py-[1.6rem] px-[4rem] rounded-[1.2rem] text-[1.6rem] cursor-pointer hover:shadow-lg ${getClasses()} ${customClasses}`}
+      className={`py-[1.6rem] px-[4rem] rounded-[1.2rem] text-[1.6rem] cursor-pointer hover:shadow-lg ${getClasses()} ${customClasses}`} onClick={onClick}
     >
       {title}
     </div>

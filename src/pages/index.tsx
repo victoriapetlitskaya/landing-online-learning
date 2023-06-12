@@ -1,3 +1,4 @@
+import Categories from "@/components/Categories/Categories";
 import Hero from "@/components/Hero/Hero";
 import PopularCourses from "@/components/PopularCourses/PopularCourses";
 
@@ -7,6 +8,7 @@ export default function Home() {
       <div className="w-full relative">
         <Hero />
         <PopularCourses />
+        <Categories />
       </div>
     </main>
   );
