@@ -8,7 +8,7 @@ const CategoryCard: React.FC<Props> = (props) => {
   const { name, description, icon } = category;
 
   return (
-    <div className="w-[29rem] h-[32.9rem] flex flex-col rounded-[1.5rem] pt-[3rem] py-[1.5rem] justify-between items-center hover:shadow-xl">
+    <div className="w-[29rem] h-[32.9rem] flex flex-col rounded-[1.5rem] pt-[3rem] pb-[1.5rem] px-[0.8rem] justify-between items-center hover:shadow-xl">
       <div className="flex flex-col items-center ">
         <div className="w-[5rem] h-[5rem] rounded-full bg-pinkS100L89 flex items-center justify-center relative">
           <div className="">{icon}</div>

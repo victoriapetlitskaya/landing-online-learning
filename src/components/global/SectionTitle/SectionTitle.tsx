@@ -6,9 +6,12 @@ import PrimaryLine from "../../../../public/assets/images/underline-primary.svg"
 
 const SectionTitle: React.FC<Props> = (props) => {
   const { title, color = "primary", underlined = false } = props;
+  const { customClasses } = props;
 
   return (
-    <div className="flex flex-col w-fit mb-[4rem] text-center xl:text-left items-center xl:items-start">
+    <div
+      className={`flex flex-col w-fit mb-[4rem] text-center xl:text-left items-center xl:items-start ${customClasses}`}
+    >
       <h1
         className={`text-[4.8rem] font-bold leading-[6.2rem] ${
           color === "primary" ? "text-primary" : "text-secondary"

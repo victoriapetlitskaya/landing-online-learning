@@ -1,3 +1,4 @@
+import Benefits from "@/components/Benefits/Benefits";
 import Categories from "@/components/Categories/Categories";
 import Hero from "@/components/Hero/Hero";
 import PopularCourses from "@/components/PopularCourses/PopularCourses";
@@ -9,6 +10,7 @@ export default function Home() {
         <Hero />
         <PopularCourses />
         <Categories />
+        <Benefits />
       </div>
     </main>
   );
