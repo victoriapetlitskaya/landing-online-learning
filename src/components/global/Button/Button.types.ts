@@ -5,6 +5,7 @@ export interface ButtonProps {
   type?: ButtonType;
   title: string;
   customClasses?: string;
+  onClick?: () => void;
 }
 
-export type ButtonType = "primary" | "secondary" | "white";
+export type ButtonType = "primary" | "secondary" | "white" | "outline";
