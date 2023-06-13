@@ -28,6 +28,7 @@ module.exports = {
         grayS0L77: "hsla(0, 0%, 77%, 1)",
         grayS12L53: "hsla(240, 12%, 53%, 1)",
         grayS19L18: "hsla(200, 19%, 18%, 1)",
+        grayS90L12: "hsla(247, 90%, 12%, 1)",
         grayS11L46: "hsla(240, 11%, 46%, 1)",
         pinkS100L89: "hsla(284, 100%, 89%, 1)",
         pinkS78L49: "hsla(357, 78%, 49%, 1)",

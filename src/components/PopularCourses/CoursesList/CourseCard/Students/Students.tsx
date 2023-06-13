@@ -10,14 +10,16 @@ import Student4 from "../../../../../../public/assets/images/students/student4.p
 import Student5 from "../../../../../../public/assets/images/students/student5.png";
 
 const Students: React.FC<Props> = (props) => {
-  const { amount } = props;
+  const { amount, customClasses } = props;
 
   const getZIndex = (i: number, length: number) => {
     return length - 1 === i ? "z-auto" : `z-${(length - i) * 10 - 10}`;
   };
 
   return (
-    <div className="rounded-[4rem] py-[0.5rem] px-[1rem] bg-grayS0L98 flex justify-between items-center absolute top-0 right-[3rem] transform translate-y-[-50%] gap-[1.6rem]">
+    <div
+      className={`rounded-[4rem] py-[0.5rem] px-[1rem] bg-grayS0L98 flex justify-between items-center gap-[1.6rem] ${customClasses}`}
+    >
       <div className="flex">
         {[Student1, Student2, Student3, Student4, Student5].map(
           (image, i, arr) => (

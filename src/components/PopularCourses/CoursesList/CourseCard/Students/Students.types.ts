@@ -2,5 +2,6 @@
 
 // Component Props
 export interface StudentsProps {
-  amount: number
+  amount: number;
+  customClasses?: string;
 }

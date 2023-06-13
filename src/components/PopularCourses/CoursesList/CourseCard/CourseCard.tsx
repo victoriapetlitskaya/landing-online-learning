@@ -4,46 +4,69 @@ import Image from "next/image";
 import { CourseCardProps as Props } from "./CourseCard.types";
 import Button from "@/components/global/Button/Button";
 import Students from "./Students/Students";
+import Prices from "./Prices/Prices";
+import CourseDetails from "./CourseDetails/CourseDetails";
 
 const CourseCard: React.FC<Props> = (props) => {
-  const { details } = props;
+  const { details, isVertical = false } = props;
   const { name, description, price, discount } = details ?? {};
   const { students, image, period } = details ?? {};
 
-  const pricesNode = () => {
-    return (
-      <div className="flex items-center gap-[0.8rem]">
-        <div className="text-secondary text-[1.7rem] font-bold leading-[2.5rem]">
-          {`$ ${discount ? price - (price * discount) / 100 : price}`}
-        </div>
-        {!!discount && (
-          <div className="opacity-50 font-normal leading-[2.2rem] text-grayS40L10 line-through">{`$ ${price}`}</div>
+  return (
+    <div
+      className={`${
+        isVertical ? "w-[82rem] h-[30rem]" : "w-[29.6rem] h-[42.8rem]"
+      } rounded-[1.4rem] overflow-hidden flex ${
+        isVertical ? "flex-row" : "flex-col"
+      } bg-white shadow-md`}
+    >
+      <div
+        className={`${
+          isVertical ? "w-[35.6rem] h-[30rem]" : "w-[29.6rem] h-[17.9rem]"
+        } overflow-hidden relative`}
+      >
+        <Image
+          src={image}
+          alt={name}
+          width={isVertical ? 356 : 296}
+          height={isVertical ? 300 : 179}
+          className={`${isVertical ? "h-[30rem] w-auto object-cover" : ""}`}
+        />
+        {isVertical && (
+          <div className="absolute right-[1.4rem] bottom-[4rem] bg-white p-[1rem] rounded-[5rem]">
+            <Prices price={price} discount={discount} />
+          </div>
         )}
       </div>
-    );
-  };
-
-  return (
-    <div className="w-[29.6rem] h-[42.8rem] rounded-[1.4rem] overflow-hidden flex flex-col bg-white shadow-md">
-      <div className="w-[29.6rem] h-[17.9rem] overflow-hidden">
-        <Image src={image} alt={name} width={296} height={179} />
-      </div>
-      <div className="flex flex-col flex-1 justify-between pt-[2rem] pb-[2.2rem] px-[1.6rem] text-[1.2rem] leading-[1.6rem] font-normal font-raleway relative">
-        <Students amount={students} />
-        <div className="mt-[3.2rem]">
-          <p className="text-grayS12L53 mb-[0.8rem]">{period}</p>
-          <h2 className="text-primary text-[1.6rem] leading-[2.4rem] font-extrabold">
-            {name}
-          </h2>
-          <p className="text-grayS0L30">{description}</p>
-        </div>
-        <div className="justify-self-end flex justify-between items-center">
-          {pricesNode()}
-          <Button
-            title="Enroll Now"
-            customClasses="py-[1rem] pl-[2rem] pr-[2rem] font-railway text-[12px]"
+      <div
+        className={`flex flex-col flex-1 justify-between ${
+          isVertical
+            ? "pt-[3.1rem] pb-[1.3rem] pl-[3.7rem] pr-[5.2rem]"
+            : "pt-[2rem] pb-[2.2rem] px-[1.6rem]"
+        }  text-[1.2rem] leading-[1.6rem] font-normal font-raleway relative`}
+      >
+        {!isVertical && (
+          <Students
+            amount={students}
+            customClasses="absolute top-0 right-[3rem] transform translate-y-[-50%]"
           />
-        </div>
+        )}
+        <CourseDetails
+          period={period}
+          name={name}
+          description={description}
+          isVertical={isVertical}
+        />
+        {isVertical && <Students amount={students} customClasses="w-fit" />}
+        {!isVertical && (
+          <div className="justify-self-end flex justify-between items-center">
+            <Prices price={price} discount={discount} />
+            <Button
+              title="Enroll Now"
+              customClasses="py-[1rem] pl-[2rem] pr-[2rem] font-railway text-[12px]"
+            />
+          </div>
+        )}
       </div>
     </div>
   );
