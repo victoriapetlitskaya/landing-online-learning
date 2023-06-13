@@ -16,7 +16,7 @@ const Benefit: React.FC<Props> = (props) => {
       } gap-[3.2rem] xl:gap-[6rem] w-full justify-center`}
     >
       <div className="flex flex-col max-w-[55rem]">
-        <div className="text-primary font-medium text-[1.8rem] leading-[2.1rem] spacing-x-2 bg-grayS0L96 rounded-[1rem] py-[1rem] px-[2.5rem] mb-[1.2rem] xl:mb-[2.4rem] w-fit">
+        <div className="text-primary font-medium text-[1.8rem] leading-[2.1rem] tracking-wide bg-grayS0L96 rounded-[1rem] py-[1rem] px-[2.5rem] mb-[1.2rem] xl:mb-[2.4rem] w-fit">
           {label}
         </div>
         <SectionTitle
@@ -35,7 +35,7 @@ const Benefit: React.FC<Props> = (props) => {
                 <div className="p-[1.2rem] shadow-md rounded-full flex items-center justify-center">
                   {icon}
                 </div>
-                <p className="text-[1.8rem] spacing-x-2 leading-[3.2rem] font-medium text-grayS11L46">
+                <p className="text-[1.8rem] tracking-wide leading-[3.2rem] font-medium text-grayS11L46">
                   {text}
                 </p>
               </div>

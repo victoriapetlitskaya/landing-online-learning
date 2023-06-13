@@ -23,7 +23,7 @@ const Students: React.FC<Props> = (props) => {
           (image, i, arr) => (
             <div
               key={i}
-              className={`${getZIndex(
+              className={`relative ${getZIndex(
                 i,
                 arr.length
               )} h-[2.9rem] w-[2.9rem] rounded-full overflow-hidden ${

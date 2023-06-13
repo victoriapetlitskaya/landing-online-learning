@@ -1,5 +1,6 @@
 import Benefits from "@/components/Benefits/Benefits";
 import Categories from "@/components/Categories/Categories";
+import GiftCards from "@/components/GiftCards/GiftCards";
 import Hero from "@/components/Hero/Hero";
 import PopularCourses from "@/components/PopularCourses/PopularCourses";
 
@@ -11,6 +12,7 @@ export default function Home() {
         <PopularCourses />
         <Categories />
         <Benefits />
+        <GiftCards />
       </div>
     </main>
   );
