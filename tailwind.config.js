@@ -30,6 +30,7 @@ module.exports = {
         grayS19L18: "hsla(200, 19%, 18%, 1)",
         grayS11L46: "hsla(240, 11%, 46%, 1)",
         pinkS100L89: "hsla(284, 100%, 89%, 1)",
+        pinkS78L49: "hsla(357, 78%, 49%, 1)",
       },
       fontFamily: {
         nunito: ["Nunito Sans", "SemiBold"],
