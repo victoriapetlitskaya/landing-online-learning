@@ -11,7 +11,7 @@ import Lines from "../../../public/assets/images/lines.svg";
 
 const Footer: React.FC<Props> = (props) => {
   return (
-    <div className="overflow-x-hidden mt-[11rem]">
+    <div className="overflow-x-hidden">
       <div className=" mt-[10rem] ml-[-50%] w-[200%] rounded-t-[100%] flex flex-col items-center px-[1.2rem]  py-[4rem] xl:py-[11rem] bg-lightGreen text-[1.4rem] text-primary font-medium">
         <div className="w-screen px-[1.6rem] xl:px-[9rem]">
           <div className="self-start mb-[2.8rem]">
