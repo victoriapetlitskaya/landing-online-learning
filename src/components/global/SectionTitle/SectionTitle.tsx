@@ -10,7 +10,7 @@ const SectionTitle: React.FC<Props> = (props) => {
 
   return (
     <div
-      className={`flex flex-col w-fit mb-[4rem] text-center xl:text-left items-center xl:items-start ${customClasses}`}
+      className={`flex flex-col w-fit mb-[4rem] text-center xl:text-left items-center xl:items-start font-nunito ${customClasses}`}
     >
       <h1
         className={`text-[4.8rem] font-bold leading-[6.2rem] ${

@@ -14,7 +14,7 @@ const Navbar: React.FC<Props> = (props) => {
   return (
     <>
       <div
-        className={`flex justify-between items-center w-full xl:hidden ${
+        className={`flex justify-between items-center w-full lg:hidden ${
           open ? "h-full" : ""
         }`}
       >
@@ -24,7 +24,7 @@ const Navbar: React.FC<Props> = (props) => {
           </div>
         )}
         {open && (
-          <div className="absolute left-0 top-0 h-screen max-h-screen w-screen overflow-hidden bg-lightGreen z-50 py-[2.4rem] px-[1.2rem]">
+          <div className="absolute left-0 top-0 h-screen max-h-screen w-screen overflow-hidden bg-lightBlue z-50 py-[2.4rem] px-[1.2rem]">
             <div
               className="w-[2.4rem] h-[2.4rem]"
               onClick={() => setOpen(false)}
@@ -51,7 +51,7 @@ const Navbar: React.FC<Props> = (props) => {
         )}
         <Logo />
       </div>
-      <div className="navbar hidden xl:flex w-full flex-1 justify-between items-center z-20">
+      <div className="navbar hidden lg:flex w-full flex-1 justify-between items-center z-20">
         <Logo />
         <div
           className={`flex gap-[8rem] text-[1.8rem] text-grayS27L86 font-medium`}

@@ -25,7 +25,7 @@ export const contacts: Contact[] = [
   {
     icon: <MessageSVG />,
     label: "Email",
-    value: "info@onlearn.com",
+    value: "info@vlearn.com",
   },
 ];
 

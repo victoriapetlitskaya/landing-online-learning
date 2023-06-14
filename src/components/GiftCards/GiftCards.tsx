@@ -6,13 +6,13 @@ import { gitCardsBenefits } from "./GiftCards.helpers";
 import Button from "../global/Button/Button";
 
 import Star from "../../../public/assets/icons/star-filled.svg";
-import GiftCard from "../../../public/assets/images/gift-card.png";
+import GiftCard from "../../../public/assets/images/gift.png";
 import Lines from "../../../public/assets/images/lines.svg";
 
 const GiftCards: React.FC<Props> = (props) => {
   return (
     <div className="flex flex-col items-center px-[1.2rem] xl:px-[15rem] pb-[11rem] xl:py-[11rem]">
-      <div className="w-full px-[2rem] xl:px-[5.4rem] py-[3rem] bg-pinkS78L49 rounded-[1.6rem] relative max-w-[120rem]">
+      <div className="w-full px-[2rem] xl:px-[5.4rem] py-[3rem] bg-secondary rounded-[1.6rem] relative max-w-[120rem]">
         <div>
           <h2 className="max-w-[43rem] text-white text-[4.8rem] leading-[6.2rem] font-bold mb-[1rem]">
             Why You should buy gift cards?
@@ -23,7 +23,7 @@ const GiftCards: React.FC<Props> = (props) => {
                 <div className="w-[2.4rem] h-[2.4rem]">
                   <Star />
                 </div>
-                <p className="text-[1.4rem text-white leading-[1.6rem] font-medium tracking-wide">
+                <p className="text-[1.4rem] text-white leading-[1.6rem] font-medium tracking-wide">
                   {benefit}
                 </p>
               </div>
@@ -38,8 +38,8 @@ const GiftCards: React.FC<Props> = (props) => {
         <div className="hidden xl:block absolute bottom-0 left-[7rem] transform rotate-180 opacity-30">
           <Lines />
         </div>
-        <div className="hidden xl:block absolute bottom-0 right-0 transform translate-x-[7rem]">
-          <Image src={GiftCard} alt="gift card" width={719} height={440} />
+        <div className="hidden xl:block absolute bottom-[-2rem] right-[2rem] transform translate-x-[7rem]">
+          <Image src={GiftCard} alt="gift card" width={600} height={600} />
         </div>
       </div>
     </div>

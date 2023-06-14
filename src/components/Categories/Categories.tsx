@@ -14,7 +14,7 @@ const Categories: React.FC<Props> = (props) => {
     <div className="flex flex-col items-center px-[1.2rem] xl:px-[9rem] pb-[11rem]">
       <SectionTitle title="Courses category" underlined />
       <Description
-        text="Onlearing is one powerful online software suite that combines all the
+        text="Vlearning is one powerful online software suite that combines all the
         tools needed to run a successful school or office."
       />
       <CategoriesList

@@ -7,7 +7,7 @@ const CategoriesList: React.FC<Props> = (props) => {
   const { categories } = props;
 
   return (
-    <div className="flex flex-col xl:flex-row gap-[4rem] flex-wrap max-w-[128rem]">
+    <div className="flex flex-col md:flex-row md:justify-center gap-[4rem] flex-wrap max-w-[128rem]">
       {categories.map((category) => (
         <CategoryCard key={category.id} category={category} />
       ))}
