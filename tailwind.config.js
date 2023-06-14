@@ -14,9 +14,9 @@ module.exports = {
         xl: "1440px",
       },
       colors: {
-        primary: "hsla(184, 83%, 25%, 1)",
-        secondary: "hsla(202, 81%, 25%, 1)",
-        lightGreen: "hsla(174, 29%, 86%, 1)",
+        primary: "hsla(176, 77%, 34%, 1)",
+        secondary: "hsla(225, 90%, 42%, 1)",
+        lightBlue: "hsla(217, 100%, 94%, 1)",
         grayS27L86: "hsla(238, 27%, 20%, 1)",
         grayS0L100A6: "hsla(0, 0%, 100%, 0.6)",
         grayS0L35: "hsla(0, 0%, 35%, 1)",
@@ -34,8 +34,7 @@ module.exports = {
         pinkS78L49: "hsla(357, 78%, 49%, 1)",
       },
       fontFamily: {
-        nunito: ["Nunito Sans", "SemiBold"],
-        raleway: ["Raleway", "Regular"],
+        nunito: ["Nunito Sans", "sans-serif"],
       },
     },
   },

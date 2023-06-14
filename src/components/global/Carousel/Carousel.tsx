@@ -74,8 +74,8 @@ const Carousel: React.FC<Props> = (props) => {
           {Array.from(new Array(length)).map((_, i) => (
             <div
               key={i}
-              className={`w-[2rem] h-[2rem] rounded-full cursor-pointer ${
-                i === activeItem ? "bg-lightGreen" : "bg-primary"
+              className={`w-[2rem] h-[2rem] rounded-full cursor-pointer bg-primary ${
+                i === activeItem ? "opacity-30" : ""
               }`}
               onClick={() => changeActiveItem(i)}
             />

@@ -15,7 +15,7 @@ const Input: React.FC<Props> = (props) => {
       <input
         type="text"
         id="input-group-1"
-        className="p-[1.2rem] border bg-white shadow-sm text-black placeholder:text-lightGreen text-[1.6rem] rounded-[1.5rem] focus:border-primary focus:outline-none block w-full pl-[2.2rem] h-full pr-[14rem]"
+        className="p-[1.2rem] border bg-white shadow-sm text-black placeholder:text-lightBlue text-[1.6rem] rounded-[1.5rem] focus:border-primary focus:outline-none block w-full pl-[2.2rem] h-full pr-[14rem]"
         placeholder={placeholder}
       />
       <div className="absolute bottom-[1rem] right-[1.2rem]">{button}</div>
