@@ -23,7 +23,10 @@ const PopularCourses: React.FC<Props> = (props) => {
   }, [activeFilter]);
 
   return (
-    <div className="flex flex-col pt-[5.4rem] pb-[11rem] px-[1.2rem] xl:px-[9rem] items-center">
+    <div
+      id="popular"
+      className="flex flex-col pt-[10rem] lg:pt-[16rem] pb-[11rem] px-[1.2rem] xl:px-[9rem] items-center xl:min-h-screen"
+    >
       <SectionTitle title="Popular Courses" color="secondary" underlined />
       <CoursesFilters
         activeFilter={activeFilter}

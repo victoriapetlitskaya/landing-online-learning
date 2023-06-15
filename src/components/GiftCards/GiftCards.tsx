@@ -11,7 +11,7 @@ import Lines from "../../../public/assets/images/lines.svg";
 
 const GiftCards: React.FC<Props> = (props) => {
   return (
-    <div className="flex flex-col items-center px-[1.2rem] xl:px-[15rem] pb-[11rem] xl:py-[11rem]">
+    <div className="flex flex-col items-center px-[1.2rem] xl:px-[15rem] lg:pb-[11rem] xl:py-[11rem]">
       <div className="w-full px-[2rem] xl:px-[5.4rem] py-[3rem] bg-secondary rounded-[1.6rem] relative max-w-[120rem]">
         <div>
           <h2 className="max-w-[43rem] text-white text-[4.8rem] leading-[6.2rem] font-bold mb-[1rem]">
