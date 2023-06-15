@@ -11,7 +11,10 @@ const Categories: React.FC<Props> = (props) => {
   const [showAll, setShowAll] = useState(false);
 
   return (
-    <div className="flex flex-col items-center px-[1.2rem] xl:px-[9rem] pb-[11rem]">
+    <div
+      id="categories"
+      className="flex flex-col items-center px-[1.2rem] xl:px-[9rem] pt-[10rem] lg:pt-[16rem] xl:min-h-screen"
+    >
       <SectionTitle title="Courses category" underlined />
       <Description
         text="Vlearning is one powerful online software suite that combines all the
