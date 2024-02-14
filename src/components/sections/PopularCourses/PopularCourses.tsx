@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import { PopularCoursesProps as Props } from "./PopularCourses.types";
-import SectionTitle from "../global/SectionTitle/SectionTitle";
+import SectionTitle from "../../global/SectionTitle/SectionTitle";
 import CoursesFilters from "./CoursesFilters/CoursesFilters";
 import { coursesList, popularCategories } from "./PopularCourses.helpers";
 import { CourseDetails } from "./CoursesList/CoursesList.types";

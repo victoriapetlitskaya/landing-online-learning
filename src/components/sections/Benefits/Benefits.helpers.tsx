@@ -2,11 +2,11 @@
 
 import { BenefitDetails } from "./Benefits.types";
 
-import Benefit1 from "../../../public/assets/images/benefit1.png";
-import Benefit2 from "../../../public/assets/images/benefit2.png";
-import SquaresSVG from "../../../public/assets/icons/squares.svg";
-import TwoSquareSVG from "../../../public/assets/icons/two-squares.svg";
-import TeamSVG from "../../../public/assets/icons/team.svg";
+import Benefit1 from "../../../../public/assets/images/benefit1.png";
+import Benefit2 from "../../../../public/assets/images/benefit2.png";
+import SquaresSVG from "../../../../public/assets/icons/squares.svg";
+import TwoSquareSVG from "../../../../public/assets/icons/two-squares.svg";
+import TeamSVG from "../../../../public/assets/icons/team.svg";
 
 export const benefits: BenefitDetails[] = [
   {

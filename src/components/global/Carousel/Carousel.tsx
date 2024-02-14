@@ -2,7 +2,7 @@ import React, { useState, UIEvent, useEffect } from "react";
 
 import { CarouselProps as Props } from "./Carousel.types";
 import { debounce } from "@/utils/performance.utils";
-import useWindowSize from "@/hooks/useWindowSize";
+import useWindowSize from "@/hooks/custom-hooks/useWindowSize";
 
 const Carousel: React.FC<Props> = (props) => {
   const { length, children, itemWidth, gap, customStyles } = props;

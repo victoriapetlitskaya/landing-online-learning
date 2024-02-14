@@ -1,6 +1,6 @@
 //ExclusiveBundles helper functions and data
 
-import { CourseDetails } from "../PopularCourses/CoursesList/CoursesList.types";
+import { CourseDetails } from "../sections/PopularCourses/CoursesList/CoursesList.types";
 
 export const exclusiveCourses: CourseDetails[] = [
   {

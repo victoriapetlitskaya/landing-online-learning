@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 
-import Benefits from "@/components/Benefits/Benefits";
 import Categories from "@/components/Categories/Categories";
 import ExclusiveBundles from "@/components/ExclusiveBundles/ExclusiveBundles";
 import Footer from "@/components/Footer/Footer";
 import GiftCards from "@/components/GiftCards/GiftCards";
 import Hero from "@/components/Hero/Hero";
 import Navbar from "@/components/Hero/Navbar/Navbar";
-import PopularCourses from "@/components/PopularCourses/PopularCourses";
+import PopularCourses from "@/components/sections/PopularCourses/PopularCourses";
+import Benefits from "@/components/sections/Benefits/Benefits";
 
 export default function Home() {
   const [navbarOpen, setNavbarOpen] = useState(false);

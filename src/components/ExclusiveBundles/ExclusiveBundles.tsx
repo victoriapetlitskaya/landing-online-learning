@@ -5,8 +5,8 @@ import SectionTitle from "../global/SectionTitle/SectionTitle";
 import Description from "../global/Description/Description";
 import Carousel from "../global/Carousel/Carousel";
 import { exclusiveCourses } from "./ExclusiveBundles.helpers";
-import CourseCard from "../PopularCourses/CoursesList/CourseCard/CourseCard";
-import useWindowSize from "@/hooks/useWindowSize";
+import CourseCard from "../sections/PopularCourses/CoursesList/CourseCard/CourseCard";
+import useWindowSize from "@/hooks/custom-hooks/useWindowSize";
 
 const ExclusiveBundles: React.FC<Props> = (props) => {
   const { width } = useWindowSize();

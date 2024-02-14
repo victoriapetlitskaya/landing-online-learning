@@ -3,11 +3,11 @@ import Image from "next/image";
 
 import { StudentsProps as Props } from "./Students.types";
 
-import Student1 from "../../../../../../public/assets/images/students/student1.png";
-import Student2 from "../../../../../../public/assets/images/students/student2.png";
-import Student3 from "../../../../../../public/assets/images/students/student3.png";
-import Student4 from "../../../../../../public/assets/images/students/student4.png";
-import Student5 from "../../../../../../public/assets/images/students/student5.png";
+import Student1 from "../../../../../../../public/assets/images/students/student1.png";
+import Student2 from "../../../../../../../public/assets/images/students/student2.png";
+import Student3 from "../../../../../../../public/assets/images/students/student3.png";
+import Student4 from "../../../../../../../public/assets/images/students/student4.png";
+import Student5 from "../../../../../../../public/assets/images/students/student5.png";
 
 const Students: React.FC<Props> = (props) => {
   const { amount, customClasses } = props;
